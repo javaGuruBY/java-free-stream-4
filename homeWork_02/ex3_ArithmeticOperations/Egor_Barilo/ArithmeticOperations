@@ -1,0 +1,15 @@
+public class MathOperationsDemo {
+    public static void main(String[] args){
+        int x = 16;
+        int y = 4;
+        System.out.println("Математические операции над числами " + x + " и " + y + " : ");
+        int addition = x + y;
+        System.out.println("Сложение: " + x + " + " + y + " = " + addition);
+        int subtraction = x - y;
+        System.out.println("Вычитание: " + x + " - " + y + " = " + subtraction);
+        int division = x / y;
+        System.out.println("Деление: " + x + " / " + y + " = " + division);
+        int multiplication = x * y;
+        System.out.println("Умножение: " + x + " * " + y + " = " + multiplication);
+    }
+}
