@@ -1,0 +1,97 @@
+Object - friend
+State:
+  satiety
+  joy
+  Height 
+  weight 
+  name
+Behavior:
+  make laugh (the level of joy increases)
+  feed (satiety level increases)
+
+Object - bed
+State:
+  seasoned
+  long 
+  height 
+  width
+Behavior:
+  tank up
+  make out
+  
+Objects - cup
+State:
+  volume
+  coloring
+Behavior:
+  fill up
+  to decorate
+
+Object - table
+State:
+  Dimensions
+  Material
+Behavior:
+  cover
+  remove
+
+Object - chair
+State:
+  Dimensions
+  Material
+Behavior:
+  Move
+  use as a cupboard
+
+Object - clothes
+State
+  Dimensions
+  Material
+  coloring
+Behavior:
+  wear
+  to decorate
+  give
+  tear
+
+Object - door
+State:
+  is open
+  Dimensions
+  number
+Behavior:
+  open
+  close
+  give number
+  
+Object - refrigerator
+State:
+  is open
+  volume
+  coloring
+  power
+Behavior:
+  verify
+  open
+  close
+  Move
+  fill up
+  
+Object - laptop
+State:
+  Mark
+  status
+  country of origin
+  coloring
+Behavior:
+  Write code
+  watch films
+  turn on / off
+
+Object - watch
+State:
+  the brand
+  accuracy
+Behavior:
+  accuracy check
+  customization
