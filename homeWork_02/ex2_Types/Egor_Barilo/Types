@@ -17,4 +17,4 @@
 Четное ли число - boolean
 Текущий год - short
 Знак пробела - char
-Стоимость билета - byte, short, int, long
+Стоимость билета - byte, short, int, long, float, double
