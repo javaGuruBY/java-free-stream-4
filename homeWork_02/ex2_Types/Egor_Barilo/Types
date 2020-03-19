@@ -10,7 +10,7 @@
 Левая граница диапазона целых чисел - byte, short, int, long
 Правая граница диапазона целых чисел - byte, short, int, long
 Загаданное пользователем целое число - byte, short, int, long
-Денежный баланс - byte, short, int, long
+Денежный баланс - byte, short, int, long, float, double
 Количество колес у велосипеда - byte
 Голодный ли человек - boolean
 Символ латинского алфавита - char
