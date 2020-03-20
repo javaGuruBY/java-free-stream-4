@@ -6,7 +6,7 @@ public class RandomGeneratorDemo {
         Random randomGenerator = new Random();
         
         int firstRandomNumber = randomGenerator.nextInt(100);
-        int secondRandomNumber = randomGenerator.nextInt(100);
+        int secondRandomNumber = (int)(Math.random()*100);
         int thirdRandomNumber = randomGenerator.nextInt(100);
         int sum = firstRandomNumber + secondRandomNumber + thirdRandomNumber;
 
