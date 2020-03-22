@@ -18,7 +18,8 @@ class Dog {
         this.age = age;
         this.color = color;
     }
-
+    Dog () {
+    }
     public void setName(String name) {
         if (name != "") this.name = name; else System.out.println("Ошибка: Собака должна быть с именем");
     }
