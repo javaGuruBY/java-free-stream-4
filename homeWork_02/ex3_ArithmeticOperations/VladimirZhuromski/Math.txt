@@ -1,6 +1,7 @@
 public class MathOperationsDemo {
 public static void main(String[] args) {
              System.out.println("MathOperationsDemo ");
+             
 int a = 100;
 int b = 45;
 System.out.println("1) Addition '+':");
