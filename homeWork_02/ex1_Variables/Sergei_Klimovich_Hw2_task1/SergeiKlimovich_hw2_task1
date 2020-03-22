@@ -5,49 +5,49 @@ short sheeps;
 long counter; 
 
 Первое число
-int firstnumber;
+int firstNumber;
 
 Ответ на вопрос
 String answer;
 
 Случайное число
-int randomnumber;
+int randomNumber;
 
 Генератор случайных чисел
 int mathrandom;
 
 Цвет автомобиля
-String carcolor;
+String carColor;
 
 Скорость движения автомобиля
 short speed;
 
 Введеное число пользователем
-int usernumber;
+int userNumber;
 
 Наибольшее число
-long maxnumber;
+long maxNumber;
 
 Наименьшее число
-long minnumber;
+long minNumber;
 
 Левая граница диапазона чисел
-double leftlimit;
+double leftLimit;
 
 Правая граница диапазона чисел
-double rightlimit;
+double rightLimit;
 
 Загаданное пользователем число
-long usernumber;
+long userNumber;
 
 Вариант ответа
 boolean answer
 
 Банковский счет
-int bankcount;
+int bankCount;
 
 Банковский баланс
-double bankbalance;
+double bankBalance;
 
 Кредитная карта
 long creditcard;
@@ -56,4 +56,4 @@ long creditcard;
 byte wheels;
 
 Стоимость билета
-short priceticket;
+short priceTicket;
