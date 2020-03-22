@@ -1,0 +1,13 @@
+import java.util.Random;
+public class RandomGeneratorDemo {
+    public static void main(String[] args) {
+        Random randomGenerator = new Random();
+        int x = randomGenerator.nextInt(11);
+        int y = randomGenerator.nextInt(11);
+        int z = randomGenerator.nextInt(11);
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("z = " + z);
+        System.out.println("Addition of numbers =" +(x + y + z));
+    }
+}
