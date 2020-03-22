@@ -1,4 +1,4 @@
-public class DogDemo {
+public class DogDemo implements java.io.Serializable {
     public static void main(String[] args) {
         Dog german_shepherd = new Dog("Era", 6, "black");
         System.out.println("Name my dog is - " + german_shepherd.getName());
@@ -13,13 +13,14 @@ class Dog {
     private String name;
     private int age;
     private String  color;
+    Dog () {
+    }
     Dog(String name, int age, String color) {
         this.name = name;
         this.age = age;
         this.color = color;
     }
-    Dog () {
-    }
+    
     public void setName(String name) {
         if (name != "") this.name = name; else System.out.println("Ошибка: Собака должна быть с именем");
     }
