@@ -1,0 +1,13 @@
+public class RandomGeneratorDemo {
+
+        public static void main(String[] args){
+            int a = (int) ( Math.random() * 10 );
+            int b = (int) ( Math.random() * 10 );
+            int c = (int) ( Math.random() * 10);
+            int sum = a+b+c;
+            System.out.println("первое случайное число - " + a);
+            System.out.println("второе случайное число - " +b);
+            System.out.println("третье случайное число - " +c);
+            System.out.println("сумма всех случайных чисел - " +sum);
+        }
+}
