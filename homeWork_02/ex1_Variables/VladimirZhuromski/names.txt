@@ -1,5 +1,5 @@
-1.	Количество кораблей в порту – numberOfShips 
-2.	Счетчик целых чисел – ntegerCounter
+1.	Количество кораблей в порту – numberOfShipsInThePort 
+2.	Счетчик целых чисел – integerCounter
 3.	Первое число – firstNumber
 4.	Ответ на вопрос - answerTheQuestion 
 5.	Случайное число – randomNumber
@@ -16,5 +16,5 @@
 16.	Банковский счет - bankAccount 
 17.	Банковский баланс - bankBalance
 18.	Кредитная карта long - creditCardNumber 
-19.	Количество колес у велосипеда - numberOfWeels 
+19.	Количество колес у велосипеда - numberOfWeelsInBicycle 
 20.	Стоимость билета - ticketPrice
