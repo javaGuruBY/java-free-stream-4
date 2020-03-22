@@ -52,7 +52,7 @@ char
 boolean;
 
 Текущий год
-byte; short; int; long;
+short; int; long;
 
 Знак пробела
 char
