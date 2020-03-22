@@ -14,7 +14,7 @@ String answer;
 int randomNumber;
 
 Генератор случайных чисел
-int mathrandom;
+int mathRandom;
 
 Цвет автомобиля
 String carColor;
@@ -50,7 +50,7 @@ int bankCount;
 double bankBalance;
 
 Кредитная карта
-long creditcard;
+long creditCard;
 
 Количество колес у велосипеда
 byte wheels;
