@@ -1,0 +1,59 @@
+Количество кораблей в порту
+short sheeps; 
+
+Счетчик целых чисел
+long counter; 
+
+Первое число
+int firstNumber;
+
+Ответ на вопрос
+String answer;
+
+Случайное число
+int randomNumber;
+
+Генератор случайных чисел
+int mathRandom;
+
+Цвет автомобиля
+String carColor;
+
+Скорость движения автомобиля
+short speed;
+
+Введеное число пользователем
+int userNumber;
+
+Наибольшее число
+long maxNumber;
+
+Наименьшее число
+long minNumber;
+
+Левая граница диапазона чисел
+double leftLimit;
+
+Правая граница диапазона чисел
+double rightLimit;
+
+Загаданное пользователем число
+long userNumber;
+
+Вариант ответа
+boolean answer
+
+Банковский счет
+int bankCount;
+
+Банковский баланс
+double bankBalance;
+
+Кредитная карта
+long creditCard;
+
+Количество колес у велосипеда
+byte wheels;
+
+Стоимость билета
+short priceTicket;
