@@ -5,7 +5,6 @@ public class MathOperationsDemo {
         int sum = a + b;
         int subtraction = a - b;
         int multiplication = a * b;
-        float division = a / b;
         System.out.println("a = "+a);
         System.out.println("b = " +b);
         System.out.println("sum = "+sum);
