@@ -17,6 +17,7 @@ System.out.print(" + ");
 System.out.print(b);
 System.out.print(" = ");
 System.out.print(sum);
+
 long x = 40;
 long y = 18;
 System.out.println("2) Substraction '-':");
@@ -33,6 +34,7 @@ System.out.print(" - ");
 System.out.print(y);
 System.out.print(" = ");
 System.out.print(difference);
+
 System.out.println("3) Division '/':");
         short m = 15;
         short n = 3;
@@ -49,6 +51,7 @@ System.out.print(" / ");
 System.out.print(n);
 System.out.print(" = ");
 System.out.print(div);
+
 System.out.println("4) Multiplication '*':");
 long q = 10;
 long w = 12;
