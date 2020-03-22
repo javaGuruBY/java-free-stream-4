@@ -1,19 +1,23 @@
 import java.util.Random;
 public class RandomDemo {
 public static void main(String[] args){
+    
     Random randomGenerator = new Random();
     int boundRandom = randomGenerator.nextInt(25);
     System.out.println();
     System.out.print("Random Generator = ");
     System.out.print(boundRandom);
+    
    double a = Math.random()*20;
    System.out.println();
    System.out.print("Math random 1 = ");
    System.out.print(a);
+   
    double b = Math.random()*50;
    System.out.println();
     System.out.print("Math random 2 = ");
     System.out.print(b);
+    
     double sum = boundRandom + a + b;
     System.out.println();
     System.out.print("Summary = ");
