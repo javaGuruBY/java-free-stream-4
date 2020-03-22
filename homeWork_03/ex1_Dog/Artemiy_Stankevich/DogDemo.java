@@ -1,4 +1,4 @@
-public class DogDemo implements java.io.Serializable {
+public class DogDemo {
     public static void main(String[] args) {
         Dog german_shepherd = new Dog("Era", 6, "black");
         System.out.println("Name my dog is - " + german_shepherd.getName());
@@ -9,7 +9,7 @@ public class DogDemo implements java.io.Serializable {
         german_shepherd.sleep();
     }
 }
-class Dog {
+class Dog implements java.io.Serializable {
     private String name;
     private int age;
     private String  color;
