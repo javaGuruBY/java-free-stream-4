@@ -8,13 +8,9 @@ public class MathOperationsDemo {
                int multiply = a * b;
                double division = (double)a / b;
 
-               System.out.print("a + b = ");
-               System.out.println(addition);
-               System.out.print("a - b = ");
-               System.out.println(difference);
-               System.out.print("a * b = ");
-               System.out.println(multiply);
-               System.out.print("a / b = ");
-               System.out.println(division);
+               System.out.println("a + b = " + addition);
+               System.out.println("a - b = " + difference);            
+               System.out.println("a * b = " + multiply);
+               System.out.println("a / b = " + division);
            }
 }
