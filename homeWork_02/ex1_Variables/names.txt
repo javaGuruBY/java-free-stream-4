@@ -1,0 +1,20 @@
+Количество кораблей в порту - int/byte numberOfShipsInThePort 
+Счетчик целых чисел - int integerСounter
+Первое целое число - int firstInteger
+Случайное целое число - int randomInteger
+Случайное вещественное число - double/float randomRealNumber
+Скорость движения автомобиля - double/float carSpeed
+Введенное пользователем целое число - int userEnteredInteger
+Наибольшее целое число - long largestInteger
+Наименьшее вещественное число - float smallestRealNumber
+Левая граница диапазона целых чисел - int leftBorderOfTheRangeOfIntegers
+Правая граница диапазона целых чисел - int rightBorderOfTheRangeOfIntegers
+Загаданное пользователем целое число - int userDefinedInteger
+Денежный баланс - float cashBalance
+Количество колес у велосипеда - byte numberOfWheelsOnABicycle
+Голодный ли человек - boolean personHungry
+Символ латинского алфавита - char latinAlphabetSymbol
+Четное ли число - boolean numberEven
+Текущий год - short thisYear
+Знак пробела - char spaceSign
+Стоимость билета - double ticketPrice
