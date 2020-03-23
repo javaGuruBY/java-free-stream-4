@@ -1,0 +1,24 @@
+public class MathOperationsDemo {
+    public static void main(String[] args){
+    System.out.println("Welcome to the 'Math Operations'!");
+    
+            System.out.println("Welcome to the 'Math Operations'!");
+
+            int firstNumber = 93;
+            int secondNumber = 15;
+
+            System.out.printf("\nMathematical operation on numbers %d and %d :\n", firstNumber, secondNumber);
+
+            int sumOfNumbers = firstNumber + secondNumber;
+            System.out.printf("\tAddition:\t\t %d + %d = %d\n", firstNumber, secondNumber, sumOfNumbers);
+
+            int substanceOfNumbers = firstNumber - secondNumber;
+            System.out.printf("\tSubtraction:\t %d - %d = %d\n", firstNumber, secondNumber, substanceOfNumbers);
+
+            double divisionOfNumbers = (double)firstNumber / secondNumber;
+            System.out.printf("\tDivision:\t\t %d / %d = %4.2f\n", firstNumber, secondNumber, divisionOfNumbers);
+
+            int multiplicationOfNumbers = firstNumber * secondNumber;
+            System.out.printf("\tMultiplication:  %d * %d = %d\n", firstNumber, secondNumber, multiplicationOfNumbers);
+    }
+}
