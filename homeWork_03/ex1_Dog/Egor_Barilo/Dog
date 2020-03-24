@@ -1,0 +1,37 @@
+public class Dog {
+    public int age;
+    public String color;
+    public String name;
+
+    public void voice(){
+        System.out.println("Wuf! (Hi!)");
+    }
+
+    public void eat(){
+        System.out.println("Wuf-Wuf! (Yummy!)");
+    }
+
+    public void sleep(){
+        System.out.println("Wrrrruf... (Snore.)");
+    }
+
+    public String getAge(){
+        String aboutAge;
+        if(this.age>=12){       // если больше года,то выводить года + месяцы
+            aboutAge = "He is " + (this.age / 12) + " years and " + (this.age % 12) + " months old.";
+        } else {                // если меньше года,то выводить только месяцы
+            aboutAge = "He is " + this.age +" months old.";
+        }
+        return aboutAge;
+    }
+
+    public String getName(){
+        String aboutName = "This dog name is " + this.name + ".";
+        return aboutName;
+    }
+
+    public String getColor(){
+        String aboutColor = "This good boy is " + this.color + ".";
+        return aboutColor;
+    }
+}
