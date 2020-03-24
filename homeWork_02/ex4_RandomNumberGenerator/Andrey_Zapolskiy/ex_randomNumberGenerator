@@ -1,0 +1,12 @@
+package lv.javaguru.demo;
+
+import java.lang.Math;
+
+public class RandomGeneratorDemo {
+    public static void main(String[] args) {
+
+           double a =  Math.random() * 200 - 100;
+
+            System.out.println(a);
+    }
+}
