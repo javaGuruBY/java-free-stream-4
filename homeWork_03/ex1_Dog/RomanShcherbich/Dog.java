@@ -1,15 +1,4 @@
-public class DogDemo {
-
-  public static void main(String[] args) {
-    Dog tuzik = new Dog("Tuzik",2,"Brown");
-
-    tuzik.voice();
-    tuzik.eat();
-    tuzik.sleep();
-
-  }
-
-  public static class Dog {
+public class Dog {
     public int age;
     public String color;
     public String name;
@@ -37,5 +26,4 @@ public class DogDemo {
     public void print(String action) {
       System.out.println(name + " is " + action);
     }
-  }
-}
+ }
