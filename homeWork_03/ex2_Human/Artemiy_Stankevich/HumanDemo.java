@@ -4,8 +4,7 @@ class Human implements Serializable {
     int age;
     Human () {
     }
-    Human (String name, int age) {
-    }
+   
     public String getName() {
         return name;
     }
