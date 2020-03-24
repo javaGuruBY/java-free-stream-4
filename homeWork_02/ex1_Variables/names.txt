@@ -1,0 +1,20 @@
+Количество кораблей в порту - numberOfShipsInThePort 
+Счетчик целых чисел - integerСounter
+Первое целое число - firstInteger
+Случайное целое число - randomInteger
+Случайное вещественное число - randomRealNumber
+Скорость движения автомобиля - carSpeed
+Введенное пользователем целое число - userEnteredInteger
+Наибольшее целое число - largestInteger
+Наименьшее вещественное число - smallestRealNumber
+Левая граница диапазона целых чисел - leftBorderOfTheRangeOfIntegers
+Правая граница диапазона целых чисел - rightBorderOfTheRangeOfIntegers
+Загаданное пользователем целое число - userDefinedInteger
+Денежный баланс - cashBalance
+Количество колес у велосипеда - numberOfWheelsOnABicycle
+Голодный ли человек - personHungry
+Символ латинского алфавита - latinAlphabetSymbol
+Четное ли число - numberEven
+Текущий год - thisYear
+Знак пробела - spaceSign
+Стоимость билета - ticketPrice
