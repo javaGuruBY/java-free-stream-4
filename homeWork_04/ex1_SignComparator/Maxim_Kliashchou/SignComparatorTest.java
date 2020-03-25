@@ -1,10 +1,10 @@
 package test;
 
-import service.SignComparator;
+import service.SignComparatorService;
 
 public class SignComparatorTest {
     public void signComparatorNegativeTest() throws Exception {
-        SignComparator signComparator = new SignComparator();
+        SignComparatorService signComparator = new SignComparatorService();
 
         int number = -1;
         String expectedResult = "Number is negative";
@@ -14,7 +14,7 @@ public class SignComparatorTest {
     }
 
     public void signComparatorPositiveTest() throws Exception {
-        SignComparator signComparator = new SignComparator();
+        SignComparatorService signComparator = new SignComparatorService();
 
         int number = 5;
         String expectedResult = "Number is positive";
@@ -24,7 +24,7 @@ public class SignComparatorTest {
     }
 
     public void signComparatorZeroTest() throws Exception {
-        SignComparator signComparator = new SignComparator();
+        SignComparatorService signComparator = new SignComparatorService();
 
         int number = 0;
         String expectedResult = "Number is equal to zero";
