@@ -1,0 +1,42 @@
+public class MathOperationsDemo {
+
+public static void main(String[] args) {
+System.out.println("Welcome to the 'Math Operations Demo'!");
+
+int numberA = 10;
+int numberB = 10;
+long numberC = 10;
+long numberD = 10;
+short numberE = 10;
+short numberF = 10;
+byte numberG = 10;
+byte numberH = 10;
+
+        int numberA = 10;
+        int b = 10;
+        int Addition = numberA + numberB;
+        
+        System.out.println("numberA + numberB = " + numberA + " + " + numberB + " = " + addition);
+
+        long numberC = 10;
+        long numberD = 10;
+        long Difference = numberA - numberB;
+        
+        System.out.println("numberC - numberD = " + numberC + " - " + numberD + " = " + difference);
+
+        short numberE = 90;
+        short NumberF = 30;
+        short Multiplication = numberE * numberF;
+        
+        System.out.println("numberE * numberF = " + numberE + " * " + numberF + " = " + multiplication);
+
+        byte numberG = 90;
+        byte numberH = 30;
+        byte  Division = (float)numberG / numberH;
+        
+        System.out.println("numberG / numberH = " + numberG + " / " + numberH + " = " + divivision);
+
+
+ }
+
+}
