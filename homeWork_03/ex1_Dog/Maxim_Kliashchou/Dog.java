@@ -1,3 +1,5 @@
+package bean;
+
 public class Dog {
     private int age;
     private String color;
@@ -7,18 +9,6 @@ public class Dog {
         this.setAge(age);
         this.setColor(color);
         this.setName(name);
-    }
-
-    public void voice(){
-        System.out.println(this.getName() + ": Woof-woof-woof");
-    }
-
-    public void eat(){
-        System.out.println(this.getName() + ": Om nom nom");
-    }
-
-    public void sleep(){
-        System.out.println(this.getName() + ": Z-z-z-z-z-z");
     }
 
     public int getAge() {
