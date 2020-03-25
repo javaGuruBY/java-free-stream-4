@@ -1,3 +1,5 @@
+package bean;
+
 public class Product {
     private String name;
     private double regularPrice;
@@ -7,17 +9,6 @@ public class Product {
         this.name = name;
         this.regularPrice = regularPrice;
         this.discount = discount;
-    }
-
-    public double actualPrice(){
-        return this.regularPrice - (this.regularPrice * discount / 100);
-    }
-
-    public void printInformation(){
-        System.out.println("Product : name = \"" + this.name
-                + "\", regular price = " + this.regularPrice
-                + " EUR, discount = " + this.discount
-                + "%, actual price = " + this.actualPrice() + " EUR");
     }
 
     public String getName() {
@@ -44,3 +35,4 @@ public class Product {
         this.discount = discount;
     }
 }
+
