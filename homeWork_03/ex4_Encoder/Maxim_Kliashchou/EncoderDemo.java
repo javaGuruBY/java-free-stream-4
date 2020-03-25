@@ -1,8 +1,11 @@
+import service.EncoderService;
+
 public class EncoderDemo {
     public static void main(String[] args) {
-        Encoder encoder = new Encoder();
+        EncoderService encoderService = new EncoderService();
 
-        encoder.encode((short)65);
-        encoder.decode('X');
+
+        encoderService.encode((short) 65);
+        encoderService.decode('X');
     }
 }
