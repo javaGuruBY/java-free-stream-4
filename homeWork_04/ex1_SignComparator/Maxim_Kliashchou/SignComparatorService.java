@@ -1,6 +1,6 @@
 package service;
 
-public class SignComparator {
+public class SignComparatorService {
     public String compare(int number) {
         if (number > 0) {
             return "Number is positive";
