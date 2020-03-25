@@ -1,0 +1,12 @@
+public class EncoderDemo{
+    public static void main(String[] args) {
+        Encoder firstEncoder = new Encoder('0');
+        Encoder secondEncoder = new Encoder(98, 'H');
+        Encoder thirdEncoder = new Encoder(68);
+        EncoderService encoderService = new EncoderService();
+
+        encoderService.inCode(firstEncoder);
+        encoderService.deCode(secondEncoder);
+        encoderService.deCode(thirdEncoder);
+    }
+}
