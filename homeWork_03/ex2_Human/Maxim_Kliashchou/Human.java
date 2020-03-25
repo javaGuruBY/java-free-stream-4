@@ -1,3 +1,5 @@
+package bean;
+
 public class Human {
     private String name;
     private int age;
@@ -5,10 +7,6 @@ public class Human {
     public Human(String name, int age){
         this.setName(name);
         this.setAge(age);
-    }
-
-    public void greet(){
-        System.out.println(" Hi! My name is " + this.getName() + ", I'm " + this.getAge() + " years old");
     }
 
     private void setAge(int age){
