@@ -1,0 +1,39 @@
+public class DogDemo {
+   public static void main(String[] args) {
+
+    Dog myMops = new Dog(2, "Brown" , "Bob");
+       System.out.println("myMops = " + "Age" + "Color" + "Name");
+        bob.voice();
+        bob.eat();
+        bob.sleep();
+
+}
+
+public class Dog {
+    public private ageIs2;
+    public private colorIsBrown;
+    public private nameIs();
+    
+    
+     public void age(2) {
+     this.age = true;
+ }
+    public void color("Brown") {
+     this.color = true;
+ }
+    public void Name() {
+     this.name = true;
+ }
+      public void age(2) {
+     this.age = false;
+ }
+    public void color("Brown") {
+     this.color = false;
+ }
+    public void Name() {
+     this.name = false;
+ }
+ 
+
+
+}
