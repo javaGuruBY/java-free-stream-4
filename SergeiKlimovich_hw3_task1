@@ -1,0 +1,20 @@
+public class Dog {
+    public int age;
+    public String color;
+    public String name;
+    public void voice (){
+      System.out.println("Гав");}
+    public void eat () {
+        System.out.println("Ням");}
+    public void sleep (){
+        System.out.println("Хррр");}
+}
+
+class DogDemo {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.voice();
+        myDog.eat();
+        myDog.sleep();
+    }
+}
