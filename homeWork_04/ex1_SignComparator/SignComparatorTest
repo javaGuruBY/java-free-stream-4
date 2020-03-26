@@ -1,0 +1,35 @@
+public class SignComparatorTest {
+    private SignComparator testingSignComparator = new SignComparator();
+    private SignComparatorService testingSignComparatorService = new SignComparatorService();
+
+    private void comparisonOfResults(String expectedResult,String actualResult, String nameTest){
+        if(expectedResult.equals(actualResult)){
+            System.out.println(nameTest + " test passed successfully");
+        } else System.out.println(nameTest + " test failed. Expected '" + expectedResult + "' but was '" + actualResult + "'.");
+
+    }
+
+    private void signComparatorTestPositiveNumber(){
+        testingSignComparator.setNumber(1);
+        String actualResult = testingSignComparatorService.comparare(testingSignComparator.getNumber());
+        comparisonOfResults("Number is positive.", actualResult,  "Positive number");
+    }
+
+    private void signComparatorTestNegativeNumber(){
+        testingSignComparator.setNumber(-1);
+        String actualResult = testingSignComparatorService.comparare(testingSignComparator.getNumber());
+        comparisonOfResults("Number is negative.", actualResult,  "Negative number");
+    }
+
+    private void signComparatorTestZero(){
+        testingSignComparator.setNumber(0);
+        String actualResult = testingSignComparatorService.comparare(testingSignComparator.getNumber());
+        comparisonOfResults("Number is equal zero.", actualResult, "Zero number");
+    }
+
+    public void testing(){
+        signComparatorTestPositiveNumber();
+        signComparatorTestNegativeNumber();
+        signComparatorTestZero();
+    }
+}
