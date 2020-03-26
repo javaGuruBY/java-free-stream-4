@@ -3,7 +3,7 @@ package test;
 import service.LightColorDetectorService;
 
 public class LightColorDetectorServiceTest {
-    public void LightColorDetectorServiceTestWithVioletLight() throws Exception{
+    public void lightColorDetectorServiceTestWithVioletLight() throws Exception{
         LightColorDetectorService lightColorDetectorService = new LightColorDetectorService();
 
         int waveLength = 400;
@@ -13,7 +13,7 @@ public class LightColorDetectorServiceTest {
         checkResults(expectedResult, actualResulat, "Test with violet light");
     }
 
-    public void LightColorDetectorServiceTestWithBlueLight() throws Exception{
+    public void lightColorDetectorServiceTestWithBlueLight() throws Exception{
         LightColorDetectorService lightColorDetectorService = new LightColorDetectorService();
 
         int waveLength = 451;
@@ -23,7 +23,7 @@ public class LightColorDetectorServiceTest {
         checkResults(expectedResult, actualResulat, "Test with blue light");
     }
 
-    public void LightColorDetectorServiceTestWithGreenLight() throws Exception{
+    public void lightColorDetectorServiceTestWithGreenLight() throws Exception{
         LightColorDetectorService lightColorDetectorService = new LightColorDetectorService();
 
         int waveLength = 560;
@@ -33,7 +33,7 @@ public class LightColorDetectorServiceTest {
         checkResults(expectedResult, actualResulat, "Test with green light");
     }
 
-    public void LightColorDetectorServiceTestWithYellowLight() throws Exception{
+    public void lightColorDetectorServiceTestWithYellowLight() throws Exception{
         LightColorDetectorService lightColorDetectorService = new LightColorDetectorService();
 
         int waveLength = 580;
@@ -43,7 +43,7 @@ public class LightColorDetectorServiceTest {
         checkResults(expectedResult, actualResulat, "Test with yellow light");
     }
 
-    public void LightColorDetectorServiceTestWithOrangeLight() throws Exception{
+    public void lightColorDetectorServiceTestWithOrangeLight() throws Exception{
         LightColorDetectorService lightColorDetectorService = new LightColorDetectorService();
 
         int waveLength = 592;
@@ -53,7 +53,7 @@ public class LightColorDetectorServiceTest {
         checkResults(expectedResult, actualResulat, "Test with orange light");
     }
 
-    public void LightColorDetectorServiceTestWithRedLight() throws Exception{
+    public void lightColorDetectorServiceTestWithRedLight() throws Exception{
         LightColorDetectorService lightColorDetectorService = new LightColorDetectorService();
 
         int waveLength = 750;
@@ -63,7 +63,7 @@ public class LightColorDetectorServiceTest {
         checkResults(expectedResult, actualResulat, "Test with red light");
     }
 
-    public void LightColorDetectorServiceTestWithInvisibleLight() throws Exception{
+    public void lightColorDetectorServiceTestWithInvisibleLight() throws Exception{
         LightColorDetectorService lightColorDetectorService = new LightColorDetectorService();
 
         int waveLength = 0;
@@ -85,13 +85,13 @@ public class LightColorDetectorServiceTest {
     public static void main(String[] args) throws Exception{
         LightColorDetectorServiceTest lightColorDetectorServiceTest = new LightColorDetectorServiceTest();
 
-        lightColorDetectorServiceTest.LightColorDetectorServiceTestWithVioletLight();
-        lightColorDetectorServiceTest.LightColorDetectorServiceTestWithBlueLight();
-        lightColorDetectorServiceTest.LightColorDetectorServiceTestWithGreenLight();
-        lightColorDetectorServiceTest.LightColorDetectorServiceTestWithYellowLight();
-        lightColorDetectorServiceTest.LightColorDetectorServiceTestWithOrangeLight();
-        lightColorDetectorServiceTest.LightColorDetectorServiceTestWithRedLight();
-        lightColorDetectorServiceTest.LightColorDetectorServiceTestWithInvisibleLight();
+        lightColorDetectorServiceTest.lightColorDetectorServiceTestWithVioletLight();
+        lightColorDetectorServiceTest.lightColorDetectorServiceTestWithBlueLight();
+        lightColorDetectorServiceTest.lightColorDetectorServiceTestWithGreenLight();
+        lightColorDetectorServiceTest.lightColorDetectorServiceTestWithYellowLight();
+        lightColorDetectorServiceTest.lightColorDetectorServiceTestWithOrangeLight();
+        lightColorDetectorServiceTest.lightColorDetectorServiceTestWithRedLight();
+        lightColorDetectorServiceTest.lightColorDetectorServiceTestWithInvisibleLight();
 
 
     }
