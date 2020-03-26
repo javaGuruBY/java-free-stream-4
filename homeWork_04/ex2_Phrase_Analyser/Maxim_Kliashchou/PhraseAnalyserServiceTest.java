@@ -3,7 +3,7 @@ package test;
 import service.PhraseAnalyserService;
 
 public class PhraseAnalyserServiceTest {
-    public void PhraseAnalyserServiceTestWithMakeAndGreatAgain() throws Exception{
+    public void phraseAnalyserServiceTestWithMakeAndGreatAgain() throws Exception{
         PhraseAnalyserService phraseAnalyserService = new PhraseAnalyserService();
 
         String text = "Make my homework great again";
@@ -14,7 +14,7 @@ public class PhraseAnalyserServiceTest {
         checkResults(expectedResult, actualResult, "Test with make and great again");
     }
 
-    public void PhraseAnalyserServiceTestWithMake() throws Exception{
+    public void phraseAnalyserServiceTestWithMake() throws Exception{
         PhraseAnalyserService phraseAnalyserService = new PhraseAnalyserService();
 
         String text = "Make my homework pls";
@@ -25,7 +25,7 @@ public class PhraseAnalyserServiceTest {
         checkResults(expectedResult, actualResult, "Test with make");
     }
 
-    public void PhraseAnalyserServiceTestWithGreatAgain() throws Exception{
+    public void phraseAnalyserServiceTestWithGreatAgain() throws Exception{
         PhraseAnalyserService phraseAnalyserService = new PhraseAnalyserService();
 
         String text = "My homework great again";
@@ -36,7 +36,7 @@ public class PhraseAnalyserServiceTest {
         checkResults(expectedResult, actualResult, "Test with great again");
     }
 
-    public void PhraseAnalyserServiceTestWithOutMakeAndGreatAgain() throws Exception{
+    public void phraseAnalyserServiceTestWithOutMakeAndGreatAgain() throws Exception{
         PhraseAnalyserService phraseAnalyserService = new PhraseAnalyserService();
 
         String text = "My homework";
@@ -59,9 +59,9 @@ public class PhraseAnalyserServiceTest {
     public static void main(String[] args) throws Exception{
         PhraseAnalyserServiceTest phraseAnalyserServiceTest = new PhraseAnalyserServiceTest();
 
-        phraseAnalyserServiceTest.PhraseAnalyserServiceTestWithMakeAndGreatAgain();
-        phraseAnalyserServiceTest.PhraseAnalyserServiceTestWithMake();
-        phraseAnalyserServiceTest.PhraseAnalyserServiceTestWithGreatAgain();
-        phraseAnalyserServiceTest.PhraseAnalyserServiceTestWithOutMakeAndGreatAgain();
+        phraseAnalyserServiceTest.phraseAnalyserServiceTestWithMakeAndGreatAgain();
+        phraseAnalyserServiceTest.phraseAnalyserServiceTestWithMake();
+        phraseAnalyserServiceTest.phraseAnalyserServiceTestWithGreatAgain();
+        phraseAnalyserServiceTest.phraseAnalyserServiceTestWithOutMakeAndGreatAgain();
     }
 }
