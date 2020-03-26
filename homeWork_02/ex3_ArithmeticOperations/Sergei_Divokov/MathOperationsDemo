@@ -5,36 +5,31 @@ System.out.println("Welcome to the 'Math Operations Demo'!");
 
 int numberA = 10;
 int numberB = 10;
-long numberC = 10;
-long numberD = 10;
-short numberE = 10;
-short numberF = 10;
-byte numberG = 10;
-byte numberH = 10;
+
 
         int numberA = 10;
-        int b = 10;
+        int numberB = 10;
         int Addition = numberA + numberB;
         
         System.out.println("numberA + numberB = " + numberA + " + " + numberB + " = " + addition);
 
-        long numberC = 10;
-        long numberD = 10;
+        long numberA = 10;
+        long numberB = 10;
         long Difference = numberA - numberB;
         
-        System.out.println("numberC - numberD = " + numberC + " - " + numberD + " = " + difference);
+        System.out.println("numberA - numberB = " + numberA + " - " + numberB + " = " + difference);
 
-        short numberE = 90;
-        short NumberF = 30;
-        short Multiplication = numberE * numberF;
+        short numberA = 90;
+        short numberB = 30;
+        short Multiplication = numberA * numberB;
         
-        System.out.println("numberE * numberF = " + numberE + " * " + numberF + " = " + multiplication);
+        System.out.println("numberA * numberB = " + numberA + " * " + numberB + " = " + multiplication);
 
-        byte numberG = 90;
-        byte numberH = 30;
-        byte  Division = (float)numberG / numberH;
+        byte numberA = 90;
+        byte numberB = 30;
+        byte  Division = (float)numberA / numberB;
         
-        System.out.println("numberG / numberH = " + numberG + " / " + numberH + " = " + divivision);
+        System.out.println("numberA / numberB = " + numberA + " / " + numberB + " = " + divivision);
 
 
  }
