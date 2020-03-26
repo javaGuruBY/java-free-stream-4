@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class MathOperationsDemo {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter number one:");
+        int numberOne = scan.nextInt();
+        System.out.println("Enter number two:");
+        int numberTwo = scan.nextInt();
+        System.out.println("Addition of numbers : " + numberOne + " + " + numberTwo + " = " +(numberOne + numberTwo));
+        System.out.println("Subtraction of numbers : " + numberOne + " - " + numberTwo + " = " +(numberOne - numberTwo));
+        System.out.println("Multiplication of numbers : " + numberOne + " * " + numberTwo + " = " +(numberOne * numberTwo));
+        System.out.println("Number division : " + numberOne + " / " + numberTwo + " = " +(numberOne / numberTwo));
+    }
+}

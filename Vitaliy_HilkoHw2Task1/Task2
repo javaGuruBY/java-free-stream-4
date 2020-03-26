@@ -1,0 +1,20 @@
+Количество кораблей в порту              int,short,byte,long                          
+Счетчик целых чисел                      int,short,byte,long                         
+Первое число                             int,short,byte,long                        
+Ответ на вопрос                          int, string                          
+Случайное число                          int,short,byte,long                          
+Генератор случайных чисел                int,short,byte,long                          
+Цвет автомобиля                          int,string                          
+Скорость движения автомобиля             int,short                           
+Введеное число пользователем             int,short,byte,long                         
+Наибольшее число                         int,short,byte,long                           
+Наименьшее число                         int,short,byte,long                             
+Левая граница диапазона чисел            int, double,float,short,long                     
+Правая граница диапазона чисел           int, double,float,short,long                            
+Загаданное пользователем число           byte, short,int,long                            
+Вариант ответа                           int, string                           
+Банковский счет                          double                           
+Банковский баланс                        double                           
+Кредитная карта                          double                            
+Количество колес у велосипеда            byte,int,short                           
+Стоимость билета                         int,double   
