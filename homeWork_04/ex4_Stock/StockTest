@@ -1,0 +1,37 @@
+public class StockTest {
+    private Stock testStock = new Stock("Apple");
+
+    private void checkResult(String whatPrice, String exceptedResult, String actualResult){
+        if(actualResult.equals(exceptedResult)){
+            System.out.println(whatPrice + " test passed successfully.");
+        } else System.out.println(whatPrice + " failed. Excepted: \n" + exceptedResult + "\nbut was:\n" + actualResult);
+
+    }
+
+    private void actualPriceTest(){
+        testStock.updateActualPrice(144);
+        String expectedResult = "Name of company: Apple\nActual price of stock: 144\nMinimal price: 144\nMaximal price: 144";
+        String actualResult = testStock.stockInformation();
+        checkResult("Actual price", expectedResult, actualResult);
+    }
+
+    private void minPriceTest(){
+        testStock.updateActualPrice(100);
+        String expectedResult = "Name of company: Apple\nActual price of stock: 100\nMinimal price: 100\nMaximal price: 144";
+        String actualResult = testStock.stockInformation();
+        checkResult("Minimal price", expectedResult, actualResult);
+    }
+
+    private void maxPriceTest(){
+        testStock.updateActualPrice(199);
+        String expectedResult = "Name of company: Apple\nActual price of stock: 199\nMinimal price: 100\nMaximal price: 199";
+        String actualResult = testStock.stockInformation();
+        checkResult("Maximal price", expectedResult, actualResult);
+    }
+
+    public void testStock(){
+        actualPriceTest();
+        minPriceTest();
+        maxPriceTest();
+    }
+}
