@@ -1,0 +1,14 @@
+public class StockDemo {
+    public static void main(String[] args) {
+        StockTest stockTest = new StockTest();
+        stockTest.testStock();
+        Stock firstStock = new Stock("Microsoft", 154);
+        System.out.println(firstStock.stockInformation());
+        firstStock.updateActualPrice(186);
+        System.out.println("\n");
+        System.out.println(firstStock.stockInformation());
+        firstStock.updateActualPrice(111);
+        System.out.println("\n");
+        System.out.println(firstStock.stockInformation());
+    }
+}
