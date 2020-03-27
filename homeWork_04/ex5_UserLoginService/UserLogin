@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class UserLogin {
+    public static void main(String[] args) {
+        System.out.println("Set your login and password:");
+        Scanner login = new Scanner(System.in);
+        String enteredLogin = login.next();
+        Scanner password = new Scanner(System.in);
+        String enteredPassword = password.next();
+        User firstUser = new User(enteredLogin, enteredPassword);
+        System.out.println("Now log in:");
+        UserLoginService userLoginService = new UserLoginService();
+        userLoginService.tryLogin(firstUser);
+
+    }
+}
