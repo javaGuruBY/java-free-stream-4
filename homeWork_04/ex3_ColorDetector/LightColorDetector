@@ -1,0 +1,9 @@
+public class LightColorDetector {
+    public static void main(String[] args) {
+        LightColorDetectorService lightColorDetectorService = new LightColorDetectorService();
+        LightColorDetectorTest lightColorDetecotrTest = new LightColorDetectorTest();
+        lightColorDetecotrTest.testLightDetector();
+        lightColorDetectorService.setWaveLength(701);
+        System.out.println(lightColorDetectorService.colorDefinition());
+    }
+}
