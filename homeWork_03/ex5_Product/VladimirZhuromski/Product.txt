@@ -1,0 +1,28 @@
+public class ProductDemo {
+    public static void main(String[] args)
+    {
+Product coffee = new Product ("Nescafe", 3.5, 0.2);
+coffee.printInformation();
+Product tea = new Product ("Lipton", 2.5, 0.1);
+tea.printInformation();
+    }
+}
+class Product {
+    String name;
+    double regularPrice;
+    double discount;
+    Product (String name, double regularPrice, double discount){
+        this.name = name;
+        this.regularPrice = regularPrice;
+        this.discount = discount;
+    }
+
+
+
+    void printInformation ()
+    {
+        double actualPrice = regularPrice - (regularPrice * discount);
+        System.out.println("Product name = " + name + ". Regular price = " + regularPrice + " roubles. Discount = " + discount + "%. Actual price = " + actualPrice + " roubles.");
+
+    }
+}
