@@ -1,0 +1,28 @@
+public class SignComparatorTest {
+    public static void main(String[] args)
+    {
+SignComparator c1= new SignComparator();
+System.out.println(c1.compare(-45));
+
+    }
+
+}
+
+
+class SignComparator {
+ public String compare(int x) {
+
+ if (x < 0)
+ {
+     return "Number is negative";
+ }
+ else if (x > 0)
+    {
+        return "Number is positive";
+    }
+else
+    {
+        return "Number is equal to zero";
+    }
+}
+}
