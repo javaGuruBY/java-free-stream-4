@@ -11,17 +11,17 @@ public class SignComparatorTest {
     public void compareTestNegativeNumber () {
         System.out.println("Initializing test 2 - checking a number for a negative value");
         int numNegative = -200;
-        String expectedBehaviourForPositiveNumber5 = "number is negative";
+        String expectedBehaviourForNegativeNumber200 = "number is negative";
         String actualResult = scs.compare(numNegative);
         System.out.print("Test 2 = ");
-        System.out.println(expectedBehaviourForPositiveNumber5 == actualResult);
+        System.out.println(expectedBehaviourForNegativeNumber200 == actualResult);
     }
     public void compareTestEqualZeroNumber () {
         System.out.println("Initializing test 3 - checking a number for a zero value");
         int numZero = 0;
-        String expectedBehaviourForPositiveNumber5 = "Number is equal to zero";
+        String expectedBehaviourForZeroNumber0 = "Number is equal to zero";
         String actualResult = scs.compare(numZero);
         System.out.print("Test 3 = ");
-        System.out.println(expectedBehaviourForPositiveNumber5 == actualResult);
+        System.out.println(expectedBehaviourForZeroNumber0 == actualResult);
     }
 }
