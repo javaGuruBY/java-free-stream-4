@@ -1,11 +1,13 @@
-public class SingComparator {
-    String positive = "number is positive";
-    String negative = "number is negative";
-    String zero = "Number is equal to zero";
+public class SignComparator {
+    public static void main(String[] args) {
+    SignComparatorTest scTest = new SignComparatorTest();
+    scTest.compareTestPositiveNumber();
+    scTest.compareTestNegativeNumber();
+    scTest.compareTestEqualZeroNumber();
 
-    public String compare (int number) {
-        if (number > 0) return positive;
-        else if (number < 0) return negative;
-        else return zero;
+    SingComparatorService sC = new SingComparatorService();
+    System.out.println(sC.compare(20));
+    System.out.println(sC.compare(-200));
+    System.out.println(sC.compare(0));
     }
 }
