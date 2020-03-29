@@ -1,0 +1,39 @@
+public class Stock {
+    private String companyName;
+    private int actualPrice;
+    private int minPrice;
+    private int maxPrice;
+
+    public Stock(){
+
+    }
+
+    public Stock(String companyName){
+        this.companyName = companyName;
+    }
+
+    public Stock(String companyName,int actualPrice){
+        this.companyName = companyName;
+        if(actualPrice<0){
+            System.out.println("Cant be negative.Set to 0.");
+            this.actualPrice = 0;
+        } else this.actualPrice = actualPrice;
+        this.minPrice = actualPrice;
+        this.maxPrice = actualPrice;
+    }
+
+    public void updateActualPrice(int actualPrice){
+        this.actualPrice = actualPrice;
+        if (actualPrice < this.minPrice || this.minPrice == 0){
+            this.minPrice = actualPrice;
+        }
+        if (actualPrice > maxPrice){
+            this.maxPrice = actualPrice;
+        }
+    }
+
+    public String stockInformation(){
+        return  "Name of company: " + this.companyName + "\nActual price of stock: " + this.actualPrice + "\nMinimal price: " + this.minPrice + "\nMaximal price: " + this.maxPrice;
+    }
+
+}
