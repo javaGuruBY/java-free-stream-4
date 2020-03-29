@@ -1,0 +1,6 @@
+public class CircleService {
+
+    public void calculateArea(Circle circle) {
+        System.out.println(circle.getRadius() * circle.getRadius());
+    }
+}
