@@ -1,0 +1,47 @@
+public class PhraseAnalyserService {
+    private String phraseBegin;
+    private String phraseEnd;
+    private String phrase;
+
+    public PhraseAnalyserService(String phrase, String phraseBegin, String phraseEnd){
+        this.phrase = phrase;
+        this.phraseBegin = phraseBegin;
+        this.phraseEnd = phraseEnd;
+    }
+
+    public PhraseAnalyserService(){
+
+    }
+
+    public void setPhrase(String phrase) {
+        this.phrase = phrase;
+    }
+
+    public String getPhrase() {
+        return phrase;
+    }
+
+    public void setPhraseBegin(String phraseBegin){
+        this.phraseBegin = phraseBegin;
+    }
+
+    public String getPhraseBegin() {
+        return phraseBegin;
+    }
+
+    public void setPhraseEnd(String phraseEnd) {
+        this.phraseEnd = phraseEnd;
+    }
+
+    public String getPhraseEnd() {
+        return phraseEnd;
+    }
+
+    public String phraseAnalysis(){
+       if(this.phrase.startsWith(this.phraseBegin)&&this.phrase.endsWith(this.phraseEnd)){
+           return "It stands no chance";
+       } else if(this.phrase.startsWith(this.phraseBegin)||this.phrase.endsWith(this.phraseEnd)){
+           return "It could be worse";
+       } else return "It is fine, really";
+    }
+}
