@@ -7,9 +7,9 @@ private String name;
     
 public Dog(String name, int age, String color) {
 
-     this.age = age;
-     this.color = color;
-     this.name = name;   
+     this.setColor(color);
+     this.setName(name);
+     this.setAge(age);  
      
      System.out.println("You add a new dog with name " + name +
      
