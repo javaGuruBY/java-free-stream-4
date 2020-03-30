@@ -35,7 +35,7 @@ public void setAge(int age) {
         this.age = age;
     }
     
-public void setName(String color) {
+public void setColor(String color) {
         if (color == null || color.equals("")) {
             throw new IllegalArgumentException("Name is invalid");
         }
