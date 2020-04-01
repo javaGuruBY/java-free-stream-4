@@ -12,7 +12,7 @@ public class Dog {
 
 class DogDemo {
     public static void main(String[] args) {
-        Dog myDog = new Dog();
+        Dog myDog = new Dog("Rex","черный", 18);
         myDog.voice();
         myDog.eat();
         myDog.sleep();
