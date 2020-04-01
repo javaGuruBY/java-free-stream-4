@@ -5,10 +5,10 @@ public class Dog {
     private String color;
     private String name;
 
-    public Dog(int age, String color, String name){
-        this.setAge(age);
-        this.setColor(color);
-        this.setName(name);
+    public Dog(int age, String color, String name) {
+        this.age = age;
+        this.color = color;
+        this.name = name;
     }
 
     public int getAge() {
@@ -37,6 +37,10 @@ public class Dog {
 
     @Override
     public String toString() {
-        return "Age: " + this.getAge() + " Color: " + this.getColor() + " Name: " + this.getName();
+        return "Dog{" +
+                "age=" + age +
+                ", color='" + color + '\'' +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
