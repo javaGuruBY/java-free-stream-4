@@ -1,3 +1,8 @@
+package test;
+
+import bean.User;
+import service.UserLoginService;
+
 public class UserLoginServiceTest {
     public static void main(String[] args) {
         UserLoginServiceTest testRunner = new UserLoginServiceTest();
