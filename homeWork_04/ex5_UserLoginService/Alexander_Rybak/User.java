@@ -1,3 +1,5 @@
+package bean;
+
 public class User {
     private String password;
     private String login;
@@ -7,14 +9,6 @@ public class User {
     public User(String login, String password) {
         this.password = password;
         this.login = login;
-    }
-
-    public void resetLoginAttempts() {
-        setCountOfAttemptsToEnterTheAccount(0);
-    }
-
-    public void blockUser() {
-        setBlocked(true);
     }
 
     public String getPassword() {
@@ -49,7 +43,4 @@ public class User {
         this.countOfAttemptsToEnterTheAccount = countOfAttemptsToEnterTheAccount;
     }
 
-    public int increaseCountOfAttemptsToEnterTheAccount() {
-        return ++(this.countOfAttemptsToEnterTheAccount);
-    }
 }
