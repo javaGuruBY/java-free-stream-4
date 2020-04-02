@@ -1,10 +1,11 @@
-public class Encoder {
+package service;
 
-    void encode(short code) {
+public class EncoderService {
+    public void encode(short code) {
         System.out.println(code + " = '" + (char) code + "'");
     }
 
-    void decode(char symbol) {
+    public void decode(char symbol) {
         System.out.println("'" + symbol + "' = " + (int) symbol);
     }
 }
