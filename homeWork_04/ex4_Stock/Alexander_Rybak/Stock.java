@@ -1,3 +1,5 @@
+package bean;
+
 public class Stock {
     private int currentPrice;
     private int minPrice;
@@ -8,11 +10,6 @@ public class Stock {
         this.currentPrice = currentPrice;
         this.companyName = companyName;
         this.minPrice = this.maxPrice = currentPrice;
-    }
-
-    public void printInformation() {
-        System.out.println("Company = \"" + getCompanyName() + "\", Current Price = " + getCurrentPrice()
-                + ", Min Price = " + getMinPrice() + ", Max Price = " + getMaxPrice());
     }
 
     public int getCurrentPrice() {
@@ -45,11 +42,5 @@ public class Stock {
 
     public void setCompanyName(String companyName) {
         this.companyName = companyName;
-    }
-
-    public void updatePrice(int price) {
-        if (price < getMinPrice()) setMinPrice(price);
-        else if (price > getMaxPrice()) setMaxPrice(price);
-        setCurrentPrice(price);
     }
 }
