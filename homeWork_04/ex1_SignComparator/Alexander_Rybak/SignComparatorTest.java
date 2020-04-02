@@ -1,3 +1,7 @@
+package test;
+
+import service.SignComparatorService;
+
 public class SignComparatorTest {
     public static void main(String[] args) {
         SignComparatorTest testRunner = new SignComparatorTest();
@@ -18,7 +22,7 @@ public class SignComparatorTest {
     public void test1() {
         String testDescription = "Must determine that the number is negative";
 
-        SignComparator signComparator = new SignComparator();
+        SignComparatorService signComparator = new SignComparatorService();
 
         String expectedResult = "Number is negative";
         String actualResult = signComparator.compare(-5);
@@ -29,7 +33,7 @@ public class SignComparatorTest {
     public void test2() {
         String testDescription = "Must determine that the number is positive";
 
-        SignComparator signComparator = new SignComparator();
+        SignComparatorService signComparator = new SignComparatorService();
 
         String expectedResult = "Number is positive";
         String actualResult = signComparator.compare(5);
@@ -40,7 +44,7 @@ public class SignComparatorTest {
     public void test3() {
         String testDescription = "Must determine that the number is equal to zero";
 
-        SignComparator signComparator = new SignComparator();
+        SignComparatorService signComparator = new SignComparatorService();
 
         String expectedResult = "Number is equal to zero";
         String actualResult = signComparator.compare(0);
