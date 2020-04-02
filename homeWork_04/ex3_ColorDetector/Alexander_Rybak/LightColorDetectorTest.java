@@ -1,3 +1,7 @@
+package test;
+
+import service.LightColorDetectorService;
+
 public class LightColorDetectorTest {
     public static void main(String[] args) {
         LightColorDetectorTest testRunner = new LightColorDetectorTest();
@@ -22,10 +26,10 @@ public class LightColorDetectorTest {
     public void test1() {
         String testDescription = "Should return color \"Violet\"";
 
-        LightColorDetector lightColorDetector = new LightColorDetector();
+        LightColorDetectorService lightColorDetectorService = new LightColorDetectorService();
 
         String expectedResult = "Violet";
-        String actualResult = lightColorDetector.detect(390);
+        String actualResult = lightColorDetectorService.detect(390);
 
         checkThatEqual(expectedResult, actualResult, testDescription);
     }
@@ -33,10 +37,10 @@ public class LightColorDetectorTest {
     public void test2() {
         String testDescription = "Should return color \"Yellow\"";
 
-        LightColorDetector lightColorDetector = new LightColorDetector();
+        LightColorDetectorService lightColorDetectorService = new LightColorDetectorService();
 
         String expectedResult = "Yellow";
-        String actualResult = lightColorDetector.detect(580);
+        String actualResult = lightColorDetectorService.detect(580);
 
         checkThatEqual(expectedResult, actualResult, testDescription);
     }
@@ -44,10 +48,10 @@ public class LightColorDetectorTest {
     public void test3() {
         String testDescription = "Should return \"Invisible Light\"";
 
-        LightColorDetector lightColorDetector = new LightColorDetector();
+        LightColorDetectorService lightColorDetectorService = new LightColorDetectorService();
 
         String expectedResult = "Invisible Light";
-        String actualResult = lightColorDetector.detect(1000);
+        String actualResult = lightColorDetectorService.detect(1000);
 
         checkThatEqual(expectedResult, actualResult, testDescription);
     }
@@ -55,10 +59,10 @@ public class LightColorDetectorTest {
     public void test4() {
         String testDescription = "Should return \"Blue light\"";
 
-        LightColorDetector lightColorDetector = new LightColorDetector();
+        LightColorDetectorService lightColorDetectorService = new LightColorDetectorService();
 
         String expectedResult = "Blue";
-        String actualResult = lightColorDetector.detect(455);
+        String actualResult = lightColorDetectorService.detect(455);
 
         checkThatEqual(expectedResult, actualResult, testDescription);
     }
@@ -66,10 +70,10 @@ public class LightColorDetectorTest {
     public void test5() {
         String testDescription = "Should return \"Green Light\"";
 
-        LightColorDetector lightColorDetector = new LightColorDetector();
+        LightColorDetectorService lightColorDetectorService = new LightColorDetectorService();
 
         String expectedResult = "Green";
-        String actualResult = lightColorDetector.detect(500);
+        String actualResult = lightColorDetectorService.detect(500);
 
         checkThatEqual(expectedResult, actualResult, testDescription);
     }
@@ -77,10 +81,10 @@ public class LightColorDetectorTest {
     public void test6() {
         String testDescription = "Should return \"Orange Light\"";
 
-        LightColorDetector lightColorDetector = new LightColorDetector();
+        LightColorDetectorService lightColorDetectorService = new LightColorDetectorService();
 
         String expectedResult = "Orange";
-        String actualResult = lightColorDetector.detect(600);
+        String actualResult = lightColorDetectorService.detect(600);
 
         checkThatEqual(expectedResult, actualResult, testDescription);
     }
@@ -88,10 +92,10 @@ public class LightColorDetectorTest {
     public void test7() {
         String testDescription = "Should return \"Red Light\"";
 
-        LightColorDetector lightColorDetector = new LightColorDetector();
+        LightColorDetectorService lightColorDetectorService = new LightColorDetectorService();
 
         String expectedResult = "Red";
-        String actualResult = lightColorDetector.detect(700);
+        String actualResult = lightColorDetectorService.detect(700);
 
         checkThatEqual(expectedResult, actualResult, testDescription);
     }
