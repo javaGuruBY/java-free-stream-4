@@ -1,12 +1,10 @@
+package bean;
+
 public class Circle {
     private double radius;
 
-    Circle(double radius) {
+    public Circle(double radius) {
         this.radius = radius;
-    }
-
-    double calculateArea() {
-        return Math.PI * Math.pow(radius, 2);
     }
 
     public double getRadius() {
