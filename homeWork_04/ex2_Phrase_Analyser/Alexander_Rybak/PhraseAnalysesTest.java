@@ -1,3 +1,7 @@
+package test;
+
+import service.PhraseAnalyserService;
+
 public class PhraseAnalysesTest {
     public static void main(String[] args) {
         PhraseAnalysesTest testRunner = new PhraseAnalysesTest();
@@ -18,10 +22,10 @@ public class PhraseAnalysesTest {
     public void test1() {
         String testDescription = "Should return a complete match";
 
-        PhraseAnalyser phraseAnalyser = new PhraseAnalyser();
+        PhraseAnalyserService phraseAnalyserService = new PhraseAnalyserService();
 
         String expectedResult = "It stands no chance";
-        String actualResult = phraseAnalyser.analyse("Make wet fddfg dsfg great again");
+        String actualResult = phraseAnalyserService.analyse("Make wet great again great again");
 
         checkThatEqual(expectedResult, actualResult, testDescription);
     }
@@ -29,10 +33,10 @@ public class PhraseAnalysesTest {
     public void test2() {
         String testDescription = "Should return a partial match";
 
-        PhraseAnalyser phraseAnalyser = new PhraseAnalyser();
+        PhraseAnalyserService phraseAnalyserService = new PhraseAnalyserService();
 
         String expectedResult = "It could be worse";
-        String actualResult = phraseAnalyser.analyse("Make wet fddfg dsfg great again great");
+        String actualResult = phraseAnalyserService.analyse("Make wet fddfg dsfg great again great");
 
         checkThatEqual(expectedResult, actualResult, testDescription);
     }
@@ -40,10 +44,10 @@ public class PhraseAnalysesTest {
     public void test3() {
         String testDescription = "Should return a complete mismatch";
 
-        PhraseAnalyser phraseAnalyser = new PhraseAnalyser();
+        PhraseAnalyserService phraseAnalyserService = new PhraseAnalyserService();
 
         String expectedResult = "It is fine, really";
-        String actualResult = phraseAnalyser.analyse("Alrew Make wet fddfg dsfg great again werfdsf");
+        String actualResult = phraseAnalyserService.analyse("Alrew Make wet fddfg dsfg great again werfdsf");
 
         checkThatEqual(expectedResult, actualResult, testDescription);
     }
