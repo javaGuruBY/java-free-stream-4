@@ -1,4 +1,6 @@
-public class PhraseAnalyser {
+package service;
+
+public class PhraseAnalyserService {
     public String analyse(String text) {
         int firstIndex = text.indexOf("Make");
         int lastIndex = text.lastIndexOf("great again");
