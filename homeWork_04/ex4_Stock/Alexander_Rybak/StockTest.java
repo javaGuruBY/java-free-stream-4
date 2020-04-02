@@ -1,3 +1,8 @@
+package test;
+
+import bean.Stock;
+import service.StockService;
+
 public class StockTest {
     public static void main(String[] args) {
         StockTest testRunner = new StockTest();
@@ -19,7 +24,8 @@ public class StockTest {
         String testDescription = "Should return true max price";
 
         Stock stock = new Stock("Apple", 15);
-        stock.updatePrice(20);
+        StockService stockService = new StockService();
+        stockService.updatePrice(stock,20);
 
         int expected = 20;
         int actual = stock.getMaxPrice();
@@ -31,7 +37,8 @@ public class StockTest {
         String testDescription = "Should return true min price";
 
         Stock stock = new Stock("Apple", 15);
-        stock.updatePrice(5);
+        StockService stockService = new StockService();
+        stockService.updatePrice(stock,5);
 
         int expected = 5;
         int actual = stock.getMinPrice();
@@ -43,7 +50,8 @@ public class StockTest {
         String testDescription = "Should return true current price";
 
         Stock stock = new Stock("Apple", 15);
-        stock.updatePrice(5);
+        StockService stockService = new StockService();
+        stockService.updatePrice(stock,5);
 
         int expected = 5;
         int actual = stock.getCurrentPrice();
