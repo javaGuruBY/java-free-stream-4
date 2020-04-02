@@ -1,3 +1,7 @@
+package test;
+
+import bean.User;
+
 public class UserTest {
 
     public static void main(String[] args) {
