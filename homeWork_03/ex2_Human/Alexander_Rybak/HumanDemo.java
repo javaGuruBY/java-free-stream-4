@@ -1,7 +1,12 @@
+import bean.*;
+import service.*;
+
+
 public class HumanDemo {
     public static void main(String[] args) {
-        Human human = new Human("Alex", 19);
+        Human alex = new Human("Alex", 19);
+        HumanService humanService = new HumanService();
 
-        human.greet();
+        humanService.greet(alex);
     }
 }
