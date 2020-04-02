@@ -1,3 +1,7 @@
+package service;
+
+import bean.User;
+
 public class UserLoginService {
 
     public static void main(String[] args) {
@@ -14,11 +18,25 @@ public class UserLoginService {
             user.setCountOfAttemptsToEnterTheAccount(0);
             return true;
         } else {
-            user.increaseCountOfAttemptsToEnterTheAccount();
+            increaseCountOfAttemptsToEnterTheAccount(user);
             if (user.getCountOfAttemptsToEnterTheAccount() == 3) {
-                user.blockUser();
+                this.blockUser(user);
             }
             return false;
         }
+    }
+
+    public void resetLoginAttempts(User user) {
+        user.setCountOfAttemptsToEnterTheAccount(0);
+    }
+
+    public void blockUser(User user) {
+        user.setBlocked(true);
+    }
+
+    public void increaseCountOfAttemptsToEnterTheAccount(User user) {
+        int count = (user.getCountOfAttemptsToEnterTheAccount());
+        count++;
+        user.setCountOfAttemptsToEnterTheAccount(count);
     }
 }
