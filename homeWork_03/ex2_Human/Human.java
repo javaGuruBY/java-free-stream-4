@@ -7,10 +7,7 @@ public class Human {
         this.age = age;
     }
 
-
-
-    void greet() {
+    public void greet() {
         System.out.println("Hi! My name is " + name + ", I'm " + age + "years old");
     }
     
-}

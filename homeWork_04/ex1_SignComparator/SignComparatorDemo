@@ -1,0 +1,9 @@
+public class SingComporatorDemo {
+    public static void main(String[] args) {
+        SignComparator signComparator = new SignComparator(-13);
+        SignComparatorService signComparatorService = new SignComparatorService();
+        SignComparatorTest signComparatorTest = new SignComparatorTest();
+        signComparatorTest.testing();
+        System.out.println(signComparatorService.comparare(signComparator.getNumber()));
+    }
+}

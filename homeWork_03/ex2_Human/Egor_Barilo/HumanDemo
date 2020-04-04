@@ -1,0 +1,17 @@
+public class HumanDemo {
+    public static void main(String[] args) {
+        Human firstHuman = new Human("Egor" , 23);
+        Human secondHuman = new Human("Alex" , 54);
+        HumanService humanService = new HumanService();
+        
+        humanService.greet(firstHuman.getName(),firstHuman.getAge());
+        humanService.greet(secondHuman.getName(),secondHuman.getAge());
+
+        firstHuman.setName("James");
+        secondHuman.setAge(42);
+        System.out.println(' ');
+        humanService.greet(firstHuman.getName(),firstHuman.getAge());
+        humanService.greet(secondHuman.getName(),secondHuman.getAge());
+    }
+
+}

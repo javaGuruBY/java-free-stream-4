@@ -1,0 +1,11 @@
+public class PhraseAnalyser {
+    public static void main(String[] args) {
+        PhraseAnalyserTest phraseAnalyserTest = new PhraseAnalyserTest();
+        PhraseAnalyserService phraseAnalyserService = new PhraseAnalyserService();
+        phraseAnalyserService.setPhrase("Make America pretty again.");
+        phraseAnalyserService.setPhraseBegin("Make");
+        phraseAnalyserService.setPhraseEnd("great again.");
+        phraseAnalyserTest.testingPhraseAnalyser();
+        System.out.println(phraseAnalyserService.phraseAnalysis());
+    }
+}
