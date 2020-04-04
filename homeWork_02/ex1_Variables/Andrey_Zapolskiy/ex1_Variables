@@ -1,0 +1,44 @@
+
+1. Количество кораблей в порту
+2. Счетчик целых чисел
+3. Первое число
+4. Ответ на вопрос
+5. Случайное число
+6. Генератор случайных чисел
+7. Цвет автомобиля
+8. Скорость движения автомобиля
+9. Введеное число пользователем
+10. Наибольшее число
+11. Наименьшее число
+12. Левая граница диапазона чисел
+13. Правая граница диапазона чисел
+14. Загаданное пользователем число
+15. Вариант ответа
+16. Банковский счет
+17. Банковский баланс
+18. Кредитная карта
+19. Количество колес у велосипеда
+20. Стоимость билета
+
+1. sumShipsInPort
+2. intNumberCounter
+3. firstNumber
+4. answer
+5. randomNumber
+6. randomNumberGenerator
+7. colorCar
+8. speedCar
+9. inputUser
+10. numberHigh
+11. numberLow
+12. numberMin
+13. numberMax
+14. numInputUser
+15. answerNumber
+16. clientBankAccaunt
+17. clientBankAccauntBalance
+18. numBankCard
+19. bycicleNumberOfWheels
+20. priceTicket
+
+

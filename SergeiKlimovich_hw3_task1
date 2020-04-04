@@ -1,0 +1,28 @@
+public class Dog {
+    public int age;
+    public String color;
+    public String name;
+    public void voice (){
+      System.out.println("Гав");}
+    public void eat () {
+        System.out.println("Ням");}
+    public void sleep (){
+        System.out.println("Хррр");}
+}
+
+class DogDemo {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.age = 10;
+        myDog.color = "черный ";
+        myDog.name = "Rex ";
+        System.out.println("моей собаке "+ myDog.age+ " лет ");
+        System.out.println("цвет моей собаки - "+myDog.color);
+        System.out.println("кличка моей собаки "+myDog.name);
+        myDog.voice();
+        myDog.eat();
+        myDog.sleep();
+    }
+}
+    }
+}

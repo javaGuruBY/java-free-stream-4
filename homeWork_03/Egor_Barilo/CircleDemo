@@ -1,0 +1,10 @@
+public class CircleDemo {
+    public static void main(String[] args) {
+        Circle firstCircle = new Circle(5.0);
+        Circle secondCircle = new Circle(0.9);
+        CircleService circleService = new CircleService();
+        
+        circleService.calculateArea(firstCircle);
+        circleService.calculateArea(secondCircle);
+    }
+}

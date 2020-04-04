@@ -1,0 +1,49 @@
+public class PhraseAnalyserTest {
+
+    public void testingPhraseAnalyser(){
+        PhraseAnalyserService phraseAnalyserService = new PhraseAnalyserService();
+
+        phraseAnalyserService.setPhraseBegin("Make");
+        phraseAnalyserService.setPhraseEnd("great again.");
+        checkTwoTruth(phraseAnalyserService);
+        checkOneTruth(phraseAnalyserService);
+        checkWithoutTruth(phraseAnalyserService);
+    }
+
+    private void resultSuccessfullyTest(String nameTest){
+        System.out.println(nameTest + " test passed successfully.");
+    }
+
+    private void resultFailedTest(String nameTest, String exceptedResult, String actualResult){
+        System.out.println(nameTest + " test failed. Excepted '" + exceptedResult + "' but was '" + actualResult + "'.");
+    }
+    private void checkTwoTruth(PhraseAnalyserService phraseAnalyserService){
+        String nameTest = "Two truth";
+        String expectedResult = "It stands no chance";
+        phraseAnalyserService.setPhrase("Make America great again.");
+        String actualResult = phraseAnalyserService.phraseAnalysis();;
+        if(expectedResult == actualResult){
+            resultSuccessfullyTest(nameTest);
+        } else resultFailedTest(nameTest, expectedResult, actualResult);
+    }
+
+    private void checkOneTruth(PhraseAnalyserService phraseAnalyserService){
+        String nameTest = "One truth";
+        String expectedResult = "It could be worse";
+        phraseAnalyserService.setPhrase("Make America pretty again.");
+        String actualResult = phraseAnalyserService.phraseAnalysis();;
+        if(expectedResult == actualResult){
+            resultSuccessfullyTest(nameTest);
+        } else resultFailedTest(nameTest, expectedResult, actualResult);
+    }
+
+    private void checkWithoutTruth(PhraseAnalyserService phraseAnalyserService){
+        String nameTest = "Without truth";
+        String expectedResult = "It is fine, really";
+        phraseAnalyserService.setPhrase("Take America pretty again.");
+        String actualResult = phraseAnalyserService.phraseAnalysis();;
+        if(expectedResult == actualResult){
+            resultSuccessfullyTest(nameTest);
+        } else resultFailedTest(nameTest, expectedResult, actualResult);
+    }
+}

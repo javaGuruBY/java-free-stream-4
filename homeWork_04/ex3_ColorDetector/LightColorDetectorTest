@@ -1,0 +1,47 @@
+public class LightColorDetectorTest {
+    LightColorDetectorService lightColorDetectorService = new LightColorDetectorService();
+    private void checkResult(String nameTest, String expectedResult, String actualResult){
+        if (expectedResult.equals(actualResult)){
+            System.out.println(nameTest + " test passed successfully.");
+        } else System.out.println(nameTest + " test failed. Expected '" + expectedResult + "' but was " + actualResult + "'.");
+    }
+
+    private void checkVioletColor(LightColorDetectorService lightColorDetectorService){
+        lightColorDetectorService.setWaveLength(400);
+        checkResult("Violet color", "Violet", lightColorDetectorService.colorDefinition());
+    }
+    private void checkBlueColor(LightColorDetectorService lightColorDetectorService){
+        lightColorDetectorService.setWaveLength(480);
+        checkResult("Blue color","Blue", lightColorDetectorService.colorDefinition());
+    }
+    private void checkGreenColor(LightColorDetectorService lightColorDetectorService){
+        lightColorDetectorService.setWaveLength(500);
+        checkResult("Green color","Green", lightColorDetectorService.colorDefinition());
+    }
+    private void checkYellowColor(LightColorDetectorService lightColorDetectorService){
+        lightColorDetectorService.setWaveLength(580);
+        checkResult("Yellow color","Yellow", lightColorDetectorService.colorDefinition());
+    }
+    private void checkOrangeColor(LightColorDetectorService lightColorDetectorService){
+        lightColorDetectorService.setWaveLength(600);
+        checkResult("Orange color","Orange", lightColorDetectorService.colorDefinition());
+    }
+    private void checkRedColor(LightColorDetectorService lightColorDetectorService){
+        lightColorDetectorService.setWaveLength(700);
+        checkResult("Red color","Red", lightColorDetectorService.colorDefinition());
+    }
+    private void checkInvisibleLight(LightColorDetectorService lightColorDetectorService){
+        lightColorDetectorService.setWaveLength(5);
+        checkResult("Invisible light","Invisible Light", lightColorDetectorService.colorDefinition());
+    }
+
+    public void testLightDetector(){
+        checkVioletColor(lightColorDetectorService);
+        checkBlueColor(lightColorDetectorService);
+        checkGreenColor(lightColorDetectorService);
+        checkYellowColor(lightColorDetectorService);
+        checkOrangeColor(lightColorDetectorService);
+        checkRedColor(lightColorDetectorService);
+        checkInvisibleLight(lightColorDetectorService);
+    }
+}

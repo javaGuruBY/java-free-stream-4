@@ -1,0 +1,29 @@
+package lv.javaguru.demo;
+
+public class MathOperationsDemo {
+    public static void main(String[] args){
+        int a = 90;
+        int b = 30;
+        int sum = a + b;
+        System.out.println("a + b = " + a + " + " + b + " = " + sum);
+
+        int c = 90;
+        int d = 30;
+        int dif = c - d;
+        System.out.println("c - d = " + c + " - " + d + " = " + dif);
+
+        int e = 90;
+        int f = 30;
+        int multi = e * f;
+        System.out.println("e * f = " + e + " * " + f + " = " + multi);
+
+        int g = 90;
+        int h = 30;
+        float div = (float)g / h;
+        System.out.println("g / h = " + g + " / " + h + " = " + div);
+
+
+
+
+    }
+}
