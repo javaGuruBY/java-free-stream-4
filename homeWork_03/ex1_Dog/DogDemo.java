@@ -1,3 +1,4 @@
+
 public class DogDemo{
     public static void main(String[] args) {
         Dog Dog1 = new Dog(3,"black","Afiya");
@@ -10,3 +11,4 @@ public class DogDemo{
 
     }
 }
+

@@ -1,0 +1,40 @@
+public class LightColorDetectorService {
+    private int waveLength;
+
+    public LightColorDetectorService(){
+
+    }
+
+    public LightColorDetectorService(int waveLength){
+        if(waveLength>0) {
+            this.waveLength = waveLength;
+        } else {
+            this.waveLength = 1;
+            System.out.println("Cant be negative.Set to 1.");
+        }
+    }
+
+    public void setWaveLength(int waveLength) {
+        this.waveLength = waveLength;
+    }
+
+    public int getWaveLength() {
+        return waveLength;
+    }
+
+    public String colorDefinition(){
+        if(380 <= this.waveLength && this.waveLength <= 449){
+            return "Violet";
+        } else if (450 <= this.waveLength && this.waveLength <= 494){
+            return "Green";
+        } else if (495 <= this.waveLength && this.waveLength <= 569){
+            return "Green";
+        } else if (570 <= this.waveLength && this.waveLength <= 589){
+            return "Yellow";
+        } else if (590 <= this.waveLength && this.waveLength <= 619){
+            return "Orange";
+        } else if (620 <= this.waveLength && this.waveLength <= 750){
+            return "Red";
+        } else return "Invisible Light";
+    }
+}

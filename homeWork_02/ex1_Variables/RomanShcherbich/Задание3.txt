@@ -1,0 +1,20 @@
+boatsParkingCount - Количество кораблей в порту
+numericCounter - Счетчик целых чисел
+number1st - Первое число
+answer - Ответ на вопрос
+randomInt - Случайное число
+numbersGenerator - Генератор случайных чисел
+autoColor - Цвет автомобиля
+autoSpeed - Скорость движения автомобиля
+userInput - Введеное число пользователем
+maxNumber - Наибольшее число
+minNumber - Наименьшее число
+leftRange - Левая граница диапазона чисел
+rightRange - Правая граница диапазона чисел
+savedUserNumber - Загаданное пользователем число
+answerCase - Вариант ответа
+bankAccount - Банковский счет
+bankBalance - Банковский баланс
+creditCard - Кредитная карта
+wheelsBicycle - Количество колес у велосипеда
+ticketCost - Стоимость билета
