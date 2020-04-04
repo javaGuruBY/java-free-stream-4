@@ -1,0 +1,9 @@
+public class EncoderService{
+    public void inCode(Encoder encoder){
+            System.out.println("Symbol " + encoder.getSymbol() + " incode is " + (int) (encoder.getSymbol()));
+    }
+
+    public void deCode(Encoder encoder){
+        System.out.println("Code " + encoder.getCode() + " decode is " + (char)(encoder.getCode()));
+    }
+}

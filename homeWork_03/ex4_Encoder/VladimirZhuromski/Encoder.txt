@@ -1,0 +1,18 @@
+public class EncoderDemo {
+    public static void main(String[] args) {
+Encoder enc1 = new Encoder();
+enc1.decode('X');
+enc1.encode((short) 66);
+
+    }
+}
+
+
+class Encoder{
+    void encode(short code) {
+        System.out.println(code + " => " + (char) code);
+    }
+void decode(char symbol){
+    System.out.println(symbol + " => " + (int) symbol);
+    }
+}
