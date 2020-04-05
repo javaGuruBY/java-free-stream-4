@@ -1,3 +1,5 @@
+package Stock;
+
 public class Stock {
     private String companyName;
     private int actualPrice;
