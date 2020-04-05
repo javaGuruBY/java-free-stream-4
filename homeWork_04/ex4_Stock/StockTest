@@ -1,3 +1,8 @@
+package Test;
+
+import bean.Stock;
+import service.StockService;
+
 public class StockTest {
     private Stock testStock = new Stock("Apple");
 
