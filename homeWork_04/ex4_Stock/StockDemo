@@ -1,3 +1,8 @@
+package service;
+
+import bean.Stock;
+import test.
+
 public class StockDemo {
     public static void main(String[] args) {
         StockTest stockTest = new StockTest();
