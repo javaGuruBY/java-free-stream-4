@@ -1,5 +1,0 @@
-public class HumanService {
-    public void greet(String name, int age){
-        System.out.println("Hi!My name is " + name + ". I'm " + age + " years old.");
-    }
-}
