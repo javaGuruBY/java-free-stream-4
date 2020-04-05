@@ -1,0 +1,14 @@
+package service;
+import bean.Product;
+
+public class ProductService {
+    public void actualPrice(Product product){
+        double onePercent = product.getRegularPrice() / 100;
+        double discount = onePercent * product.getDiscount();
+        System.out.println("Actual price for product " + product.getName() + " is " + (product.getRegularPrice()-discount));
+    }
+
+    public void printInformation(Product product){
+        System.out.println("This is " + product.getName() + ".Its cost " + product.getRegularPrice() + " and have " + product.getDiscount() + "% discount.");
+    }
+}
