@@ -1,3 +1,5 @@
+package service;
+
 public class ProductService {
     public void actualPrice(Product product){
         double onePercent = product.getRegularPrice() / 100;
