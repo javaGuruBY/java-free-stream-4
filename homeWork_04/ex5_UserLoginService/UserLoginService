@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class UserLoginService {
     public void tryLogin(User user) {
         Scanner login = new Scanner(System.in);
-        String enteredLogin = login.next();
+        String enteredLogin = login.nextLine();
         Scanner password = new Scanner(System.in);
-        String enteredPassword = password.next();
+        String enteredPassword = password.nextLine();
         if (!user.getBlocking()) {
             if (user.getLogin().equals(enteredLogin) && user.getPassword().equals(enteredPassword)) {
                 System.out.println("You are logged in!");
