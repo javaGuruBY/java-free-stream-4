@@ -1,3 +1,6 @@
+import bean.Product;
+import service.ProductService;
+
 public class ProductDemo {
     public static void main(String[] args) {
         Product firstProduct = new Product("Milk", 100, 25);
