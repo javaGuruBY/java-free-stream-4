@@ -1,0 +1,12 @@
+public class DogDemo {
+   public static void main(String[] args) {
+
+    Dog myMops = new Dog(2, "Brown" , "Bob");
+       System.out.println("myMops = " + "Age" + "Color" + "Name");
+        bob.voice();
+        bob.eat();
+        bob.sleep();
+
+}
+
+
