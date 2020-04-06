@@ -1,0 +1,70 @@
+import java.lang.Math;
+import java.util.Arrays;
+
+public class mathOpsDemo {
+    public static void main(String[] args) {
+        System.out.println("welcome to the math operations!!!");
+
+        int a = 29;
+        int b = 321;
+
+        System.out.println("1) Addition '+' :");
+        System.out.print("a = ");
+        System.out.print(a);
+        System.out.print(", ");
+        System.out.print("b = ");
+        System.out.print(b);
+
+        int sum = a + b;
+
+        System.out.println();
+        System.out.print("a + b = ");
+        System.out.print(a);
+        System.out.print(" + ");
+        System.out.print(b);
+        System.out.print(" = ");
+        System.out.println(sum);
+
+        System.out.println("------------------------");
+
+        System.out.println("2 Substraction '-' :");
+
+        long x = 78;
+        long y = 23;
+
+        System.out.println("x = " + x + ", y = " + y);
+
+        long difference = x - y;
+        System.out.println("x - y = " + x + " - " + y + " = " + difference);
+
+        System.out.println("------------------------");
+
+        System.out.println("3 Division '/' :");
+
+        short m = 4356;
+        short n = 66;
+
+        System.out.println("m = " + m + ", n = " + n);
+        System.out.println("m / n = " + m + " / " + n + " = " + (4356/66 ));
+        System.out.println("------------------------");
+        System.out.println("THE JOB IS DONE!!");
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
