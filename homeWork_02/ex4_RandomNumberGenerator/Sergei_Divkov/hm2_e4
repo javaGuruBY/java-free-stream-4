@@ -1,0 +1,19 @@
+public class RandomGeneratorDemo {
+
+public static void main(String[] args) {
+           Random randomGeneratorDemo = new RandomDemo ();
+
+           int number = 75;
+
+           int numberA = RandomGenerator.nextInt();
+           int numberB = RandomGenerator.nextInt();
+           int numberC = RandomGenerator.nextInt();
+
+           System.out.println("numberA + numberB + numberC = " + numberA + " + " + numberB + "+ numberC+"" = " + addition);
+
+
+
+ }
+
+}
+
