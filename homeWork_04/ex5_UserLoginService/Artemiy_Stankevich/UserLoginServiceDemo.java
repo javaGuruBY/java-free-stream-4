@@ -9,5 +9,10 @@ public class UserLoginServiceDemo {
             User firstUser = new User("Ticon", "159357");
             System.out.println("Try to login with invalid password - result: " + service.login(firstUser, "2020327"));
             System.out.println("Try to login with valid password - result: " + service.login(firstUser, "159357"));
+        
+            UserLoginServiceTest userLoginServiceTest = new UserLoginServiceTest();
+            userLoginServiceTest.checkLoginValid();
+            userLoginServiceTest.checkLoginInValid();
+            userLoginServiceTest.isBlockedTest(user1);
     }
 }
