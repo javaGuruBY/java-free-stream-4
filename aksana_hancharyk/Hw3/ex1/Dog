@@ -1,0 +1,96 @@
+
+public class Dog {
+
+    private int age;
+    private String color;
+    private String name;
+
+    public Dog(int age, String color, String name) {
+        this.setAge(age);
+        this.setColor(color);
+        this.setName(name);
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
+
+    public void bark(int dog) {
+
+        Dog dogOne = new Dog(2, "black", "Tom");
+        Dog dogTwo = new Dog(3, "Gray", "Boss");
+        Dog dogThree = new Dog(4,"Blu", "Cat");
+
+        System.out.println(dogOne.getName() + " says rufff rufff ");
+        System.out.println(dogThree.getName() + " and " +  dogTwo.getName() + " say rufff rufff");
+    }
+
+    public void eat(int dog) {
+        Dog dogOne = new Dog(2, "black", "Tom");
+        Dog dogTwo = new Dog(3, "Gray", "Boss");
+        Dog dogThree = new Dog(4,"Blu", "Cat");
+
+        System.out.println(dogTwo.getName() + " is eating : Om nom nom");
+        System.out.println(dogOne.getName() + " and " + dogThree.getName() + " saw him and ran to eat" );
+    }
+
+    public void sleep(int dog) {
+        Dog dogOne = new Dog(2, "black", "Tom");
+        Dog dogTwo = new Dog(3, "Gray", "Boss");
+        Dog dogThree = new Dog(4,"Blu", "Cat");
+
+        System.out.println(dogThree.getName() + " is sleeping : Z-z-z-z-z-z");
+        System.out.println(dogOne.getName() + " and " + dogTwo.getName() + " are still playing");
+
+    }
+}
+mport java.util.Scanner;
+
+public class DogDemo<bark> {
+    public static void main(String[] args) {
+        Dog dogOne = new Dog(2, "black", "Tom");
+        Dog dogTwo = new Dog(3, "Gray", "Boss");
+        Dog dogThree = new Dog(4,"Blu", "Cat");
+
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("MY Dogs characteristics are :");
+
+        System.out.println("dogOne's   " + " name is " + dogOne.getName() + " , age is " +
+                dogOne.getAge() + " , color is " + dogOne.getColor());
+
+
+        System.out.println("dogTwo's   " + " name is " + dogTwo.getName() + " , age is " +
+                dogTwo.getAge() + " , color is " + dogTwo.getColor());
+
+        System.out.println("dogThree's   " + " name is " + dogThree.getName() + " , age is " +
+                dogThree.getAge() + " , color is " + dogThree.getColor());
+
+        dogOne.bark(1);
+        dogTwo.eat(2);
+        dogThree.sleep(3);
+
+
+    }
