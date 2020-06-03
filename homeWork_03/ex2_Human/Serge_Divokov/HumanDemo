@@ -1,0 +1,8 @@
+public class HumanDemo {
+
+    public static void main(String[] args) {
+
+        Human = new Human('John', 20);
+        System.out.println("Human = " + "John" + "20");
+    }
+}
